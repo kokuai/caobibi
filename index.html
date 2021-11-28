@@ -1,0 +1,227 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*, *:before, *:after {box-sizing: inherit;}
+		html, body, div, img, header, footer {padding: 0;margin: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+		:focus {outline: 0;}
+		body {line-height: 1;}
+		ol, ul {list-style: none;}
+		html {font-size: 100%; box-sizing: border-box;}
+		html, body {background-color: #EAE9E7;}
+		h3, p {margin: 0;}
+		.girds, .footer {margin: 10px auto; max-width: 500px;}
+		img {border: 0;}
+		.row {display: flex;}
+		.grid {width: 33.3%; padding-bottom: 10px; background-color: #fff; margin: 5px;border-radius: 6px;}
+		.app {text-align: center; display: block;}
+		.app img {max-width: 100%;}
+		.app .img {width: 100%; padding-bottom:100%; background-color: #aaa;background-size: cover;background-position: center center;border-radius: 6px 6px 0 0;position: relative;}
+		.app h3 {text-align: center;margin: 8px;font-size: 1rem;font-weight: normal;}
+		.app button, .app .button {background-color: #fff; color: #ef9d3f; border: 2px solid #ef9d3f; border-radius: 1rem; display: inline-block; margin: 0 auto; padding: 6px 20px; font-size: 0.8rem;}
+		.header {margin: 0 auto; max-width: 500px;}
+		.header-link {display: block;overflow: hidden;}
+		.header-link img {width: 100%;}
+		a {text-decoration: none;}
+		a.app {color: #333;}
+		.tips {font-size: 0.8rem; text-align: center;margin-top: 10px;}
+		.footer {color: gray; text-align: center; padding: 10px; margin-bottom: 100px;}
+		.fixed {position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%;}
+		.popup {position:absolute;box-sizing: border-box;display: flex; flex-direction: column; justify-content: space-around; padding: 15px; text-align: center; top:20%; left: 50%; width: 300px; height: 350px; margin-left: -150px; border: 1px solid #eee; border-radius: 15px;box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12),0px 1px 3px 0px rgba(0,0,0,0.2);background-color: white;}
+		.popup-bg {background-image: url(./style/R3.png);background-size: 270px;background-repeat: no-repeat;}
+		.popup .icon {width: 125px; height: 125px;margin: 0 auto;border-radius: 10px;} 
+		.popup h3 {margin: 0; color: #ee4375;}
+		.popup .button {border-radius: 20px; background-color: #ee4375; color: #fff;width: 100px; padding: 12px 6px; font-size: .75rem;margin: 0 auto;}
+		.popup .btn-close {background-color: #aaa;}
+		.bottom-banner {z-index: 1000;position: fixed; bottom: 0; left: 0; width: 100%; height: 70px; display: flex;justify-content: space-between; background-color: #4158D0;background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);}
+		.bb-left {display: flex;}
+		.bb-left .icon {height: 70px;}
+		.bb-app {margin: 1rem;color: white;}
+		.bb-app h3 {margin-bottom: .6rem;}
+		.bb-button { color: #ee4375; padding: 10px 20px;background-color: white;margin: 15px; text-align: center; border-radius: 15px;line-height: 20px;}
+		.bb-link {position: absolute; top:0; left: 0; right: 0; bottom: 0;}
+		.blank { left:0;top:10px;right:0;position: absolute;line-height: 1.5rem;color: #777;font-size: 0.8rem;}
+
+	</style>
+
+<script src="./style/hm.js"></script>
+</script><style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible,body>iframe#redeviation-bs-overlay.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-40px, 0, 0);top:0;left:0;width:40px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/32px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos='right']{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos='right']>div{transform:translate3d(40px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{background:transparent}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#redeviation-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0, 0, 0, 0.6) !important;color-scheme:normal !important;speak:none;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(350px + 50px)}body>iframe#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style></head>
+
+<body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5b3d80031f624d3a7b64f49a612b303e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	<div class="header">
+		<a class="header-link" href="https://www.daxiaojie.vip/">
+			<img src="./style/yeyelu.jpg" alt="">
+		</a>
+		<div class="tips" style=" color: #f74b4b;">操逼逼(www.caobibi.net)给你带来不一样得感觉</div>
+	</div>
+		<div class="girds">
+		<div class="row">
+			  
+		  <div class="grid">
+				<a id="app-1" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/16.gif);"></div>
+					<h3>甜心直播</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+
+
+			<div class="grid">
+				<a id="app-2" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/aizhibo.gif);"></div>
+					<h3>女神直播</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+				<a id="app-3" class="app" href="   http://baertd.com/?dc=bxzs9" target="_blank">
+					<div class="img" style="background-image: url(./style/15.gif);"></div>
+					<h3>女神约约</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+				<a id="app-4" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/5.gif);"></div>
+					<h3>在线约吗</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+
+    
+
+		</div>
+		<div class="row">
+
+			<div class="grid">
+					<a id="app-5" class="app" href="  http://baertd.com/?dc=bxzs9" target="_blank">
+					<div class="img" style="background-image: url(./style/6.gif);"></div>
+					<h3>妖女直播</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+				<a id="app-6" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/7.gif);"></div>
+					<h3>妖女直播</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+				<div class="grid">
+					<a id="app-7" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+						<div class="img" style="background-image: url(./style/8.gif);"></div>
+						<h3>私密直播</h3>
+						<span class="button">下载</span>
+					</a>
+				</div>
+			<div class="grid">
+				<a id="app-8" class="app" href="http://baertd.com/?dc=bxzs9" target="_blank">
+					<div class="img" style="background-image: url(./style/9.gif);"></div>
+					<h3>美眉水多</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+
+		</div>
+		
+		
+		<div class="row">
+		    <div class="grid">
+			    <a id="app-25" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/17.gif);"></div>
+					<h3>91视频</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+				<a id="app-26" class="app" href=" http://baertd.com/?dc=bxzs9" target="_blank">
+					<div class="img" style="background-image: url(./style/10.gif);"></div>
+					<h3>麻豆av</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+				<a id="app-26" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/xiaohuangpian.png);"></div>
+					<h3>美女在线</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+            <div class="grid">
+				<a id="app-28" class="app" href=" http://baertd.com/?dc=bxzs9" target="_blank">
+					<div class="img" style="background-image: url(./style/6.gif);"></div>
+					<h3>网红约吗</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			
+
+		</div>
+		<div class="row">
+			<div class="grid">
+				<a id="app-30" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/61114eaa2fc98792903753.gif);"></div>
+					<h3>女神爱爱</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+		<div class="grid">
+				<a id="app-31" class="app" href="   http://baertd.com/?dc=bxzs9" target="_blank">
+					<div class="img" style="background-image: url(./style/611b95bcb5cca333066700.gif);"></div>
+					<h3>抖阴直播</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+				<a id="app-32" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+					<div class="img" style="background-image: url(./style/611127da6ba93337214915.gif);"></div>
+					<h3>同城主播</h3>
+					<span class="button">下载</span>
+				</a>
+			</div>
+			<div class="grid">
+					<a id="app-7" class="app" href="   http://yese71.com?channel=7D0NE3" target="_blank">
+						<div class="img" style="background-image: url(./style/2-e30a80bef0e9.gif);"></div>
+						<h3>喷水直播</h3>
+						<span class="button">下载</span>
+					</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bottom-banner">
+		<div class="bb-left">
+			<img class="icon" src="./style/onn.gif">
+			<div class="bb-app">
+				<h3>女神直播</h3>
+				<p>妹妹等你冲冲冲</p>
+			</div>
+		</div>
+		<span class="bb-button">立即下载</span>
+		<a id="app-bottom" href="   http://yese71.com?channel=7D0NE3" target="_blank" class="bb-link"></a>
+	</div>
+	<div class="footer">
+
+	</div>
+	<script>
+		document.getElementById('btn-close').addEventListener('click', function(e){
+			e.preventDefault()
+			document.getElementById('popup-box').remove()
+		})
+	</script>
+
+<iframe id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="left" src="./style/saved_resource.html"></iframe><div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight redeviation-bs-visible" data-pos="left" style="height: 100%; top: 0%;"><div><span></span></div></div></body></html>
